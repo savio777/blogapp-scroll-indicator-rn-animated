@@ -1,19 +1,5 @@
+import { StyleSheet } from "react-native";
 import styled from "styled-components/native";
-
-export const Container = styled.View`
-  background-color: #29292e;
-  position: absolute;
-  flex-direction: row;
-  align-self: center;
-  align-items: center;
-  justify-content: center;
-
-  width: 200px;
-  height: 56px;
-  border-radius: 12px;
-  bottom: 32px;
-  padding: 16px;
-`;
 
 export const Title = styled.Text`
   color: #fff;
@@ -32,3 +18,22 @@ export const Progress = styled.View<{ percentage: number }>`
   background-color: #8257e5;
   width: ${({ percentage }) => percentage}%;
 `;
+
+export const style = StyleSheet.create({
+  container: {
+    backgroundColor: "#29292e",
+    position: "absolute",
+    flexDirection: "row",
+    alignSelf: "center",
+    alignItems: "center",
+    justifyContent: "center",
+    height: 56,
+    borderRadius: 24,
+    bottom: 32,
+    padding: 16,
+  },
+  progressContent: {
+    flexDirection: "row",
+    alignItems: "center",
+  },
+});
