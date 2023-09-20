@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { ScrollView, useWindowDimensions } from "react-native";
 import ProgressBar from "../../components/ProgressBar";
 import { Container, Title, Text, Scroll } from "./styles";
